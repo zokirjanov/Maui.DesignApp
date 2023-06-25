@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Maui.DesignApp.Views.Dashboard"
+             Title="Dashboard"
+			 BackgroundColor="#101216">
+	<Grid Margin="25,25,0,0" RowDefinitions=".1*,.2*,.15*,.45*,.1*">
+		<Grid Margin="0,0,25,0" ColumnDefinitions="*,*">
+			<VerticalStackLayout VerticalOptions="Center">
+				<Rectangle 
+					Fill="#CACDD3"
+					HeightRequest="2"
+					HorizontalOptions="Start"
+					WidthRequest="25"/>
+				<Rectangle 
+					Margin="0,5,0,0"
+					Fill="#CACDD3"
+					HeightRequest="2"
+					HorizontalOptions="Start"
+					WidthRequest="35"/>
+			</VerticalStackLayout>
+			<Border Grid.Column="1"
+					HeightRequest="75"
+					HorizontalOptions="End"
+					StrokeShape="RoundRectangle 80,80,80,80"
+					WidthRequest="75">
+					<Image
+						Aspect="AspectFill"
+						HeightRequest="100"
+						WidthRequest="100"
+						HorizontalOptions="Center"
+						Source="dotnet_bot.svg"/>
+			</Border>
+		</Grid>
+	</Grid>
+</ContentPage>
