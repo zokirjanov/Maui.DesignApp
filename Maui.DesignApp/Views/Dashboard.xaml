@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 xmlns:helper="clr-namespace:Maui.DesignApp.Helpers"
              x:Class="Maui.DesignApp.Views.Dashboard"
              Title="Dashboard"
 			 BackgroundColor="#101216">
@@ -40,6 +41,11 @@
 				   FontSize="20"
 				   Text="Join your friends"
 				   TextColor="#Acb1bb"/>
+			<Image Margin="0,30,0,0">
+				<Image.Source>
+					<FontImageSource FontFamily="FAS" Glyph="{x:Static helper:FontAwesomeHelper.Server}"/>
+				</Image.Source>
+			</Image>
 		</VerticalStackLayout>
 	</Grid>
 </ContentPage>
